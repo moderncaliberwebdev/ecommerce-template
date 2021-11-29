@@ -1,7 +1,11 @@
-$color-primary: green;
+$color-accent: #4d4d4d;
+$color-accent-light: #c0c0c0;
+$nav_icon_size: 40px;
+$color-bg: #f2f2f2;
+$font: sans-serif;
 
 .heading {
-  color: $color-primary;
+  color: $color-accent;
   text-align: center;
 }
 
@@ -9,5 +13,248 @@ $color-primary: green;
   display: block;
   text-align: center;
   margin: 0 auto;
-  color: #a1a1a1
+}
+
+.nav {
+  width: 100rem;
+  margin: -3rem auto -3rem auto;
+  border-radius: 0 0 20px 20px;
+  padding: 3rem 3rem .5rem 3rem;
+  box-shadow: 0 0 10px rgba(51, 51, 51, .2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $color-accent;
+  font-family: $font;
+  text-transform: uppercase;
+}
+
+.nav__header {
+  font-weight: 700;
+  font-style: 2rem;
+  line-height: 4rem;
+  color: $color-accent;
+  text-decoration: none;
+}
+
+.nav__options {
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  font-weight: 700;
+
+  a {
+    color: $color-accent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 3px;
+  }
+}
+.nav__buttons {
+  display: flex;
+  width: 13rem;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    padding: 1rem;
+    height: $nav_icon_size;
+    width: $nav_icon_size;
+    border-radius: 100%;
+  }
+
+  a:hover {
+    background-color: $color-accent-light;
+  }
+}
+
+.nav__imgs {
+  width: 2.2rem;
+}
+
+
+.banner {
+  display: block;
+  margin: 10rem auto 2rem auto;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100rem;
+}
+.options {
+  position: relative;
+
+  &__button_cont {
+    position: absolute;
+    top: 70%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    display: block;
+    padding: 1.5rem 2.5rem;
+    margin: 1rem auto 0 auto;
+    font: $font;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: all .3s;
+    border: 2px solid #fff;
+
+    &:hover {
+      transform: translateY(-.5rem);
+      color: #000;
+      background-color: rgba(255, 255, 255, .8);
+      transition: all .3s;
+    }
+  }
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+  font-size: 1.6rem;
+  width: 100rem;
+  margin: 10rem auto 0 auto;
+  display: block;
+  color: $color-accent;
+
+  &__row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__col1 {
+      display: flex;
+      flex-direction: row;
+      &__col1 {
+        margin-right: 3rem;
+        &__head {
+          font-weight: bold;
+        }
+        &__rows {
+          font-weight: 100;
+          margin: 1rem 1rem 1rem 0 ;
+        }
+      }
+      &__col2 {
+        &__head {
+          font-weight: bold;
+        }
+        &__rows {
+          font-weight: 100;
+          margin: 1rem 1rem 1rem 0 ;
+        }
+      }
+    }
+    &__col2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__h1 {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.6rem;
+      }
+      &__input {
+        &__text {
+          height: 4rem;
+          padding: 0 4rem 0 2rem;
+          border-radius: 20px;
+          border-style: none;
+          box-shadow: 5px 5px 8px rgba($color-accent, .2) inset;
+          width: 30rem;
+          background-color: $color-bg;
+          transition: all .3s;
+
+          &:focus {
+            outline-width: 0;
+          }
+          &:focus, &:hover {
+            box-shadow: 3px 3px 2px rgba($color-accent, .15) inset;
+            transition: all .3s;
+          }
+        }
+        &__button {
+          margin-left: -3rem;
+          height: 4rem;
+          border-radius: 20px;
+          border-style: none;
+          padding: 1rem 3rem;
+          background-color: $color-bg;
+          box-shadow: 6px 6px 10px rgba($color-accent, .2), -6px -6px 10px rgba(#fff, 1), 12px 0 10px rgba($color-accent, .1) inset;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+      }
+      &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1rem 0;
+
+        &__icon {
+         width: 4rem;
+         transition: all .3s;
+         cursor: pointer;
+        }
+
+        .instagram:hover {
+          -webkit-filter: drop-shadow(0 0 5px #6d27a1);
+          filter: drop-shadow(0 0 5px #6d27a1);
+        }
+        .tiktok:hover {
+          -webkit-filter: drop-shadow(0 0 5px #00e6de);
+          filter: drop-shadow(0 0 5px #00e6de);
+        }
+        .twitter:hover {
+          -webkit-filter: drop-shadow(0 0 5px #4e9ed5);
+          filter: drop-shadow(0 0 5px #4e9ed5);
+        }
+        .facebook:hover {
+          -webkit-filter: drop-shadow(0 0 5px #1768eb);
+          filter: drop-shadow(0 0 5px #1768eb);
+        }
+        .youtube:hover {
+          -webkit-filter: drop-shadow(0 0 5px #ff001b);
+          filter: drop-shadow(0 0 5px #ff001b);
+        }
+      }
+    }
+  }
+  &__row2 {
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    &__text{
+      margin: 1rem auto;
+      display: block;
+      text-align: center;
+    }
+    &__heavy{
+      margin: 1rem  auto;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+    }
+    &__light{
+      margin: 1rem  auto;
+      display: block;
+      text-align: center;
+      font-weight: 100;
+    }
+  }
 }

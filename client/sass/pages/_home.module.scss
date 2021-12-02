@@ -64,21 +64,28 @@ $font: sans-serif;
   flex-direction: row;
   justify-content: space-between;
 
-  a {
-    padding: 1rem;
-    height: $nav_icon_size;
-    width: $nav_icon_size;
-    border-radius: 100%;
-  }
+  // a {
+  //   padding: 1rem;
+  //   height: $nav_icon_size;
+  //   width: $nav_icon_size;
+  //   border-radius: 100%;
+  // }
 
-  a:hover {
+  // a:hover {
+  //   background-color: $color-accent-light;
+  // }
+}
+
+.nav__imgs {
+  width: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+
+  &:hover {
     background-color: $color-accent-light;
   }
 }
 
-.nav__imgs {
-  width: 2.2rem;
-}
 
 
 .banner {
@@ -88,6 +95,8 @@ $font: sans-serif;
   overflow: hidden;
   width: 100rem;
 }
+
+
 .options {
   position: relative;
 

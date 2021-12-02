@@ -15,7 +15,7 @@ export default function Nav() {
                 <a href="/shop/men">Men</a>
             </div>
             <div className={styles.nav__buttons}>
-                <a href="/profile">
+                <a href="/api/auth/login">
                     <img src="/profile.png" alt="Profile" className={styles.nav__imgs}/>
                 </a>
                 <a href="/search">

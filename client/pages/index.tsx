@@ -25,7 +25,7 @@ export default function Home({ title }) {
       <Nav />
       <img src='/banner.png' alt="Banner" className={styles.banner}/>
       <div className={styles.options}>
-        <img src='/alphalete.jpg' alt="Banner" className={styles.banner}/>
+      <img src='/alphalete.jpg' alt="Banner" className={styles.banner}/>
         <div className={styles.options__button_cont}>
           <button className={styles.options__button}>SHOP WOMEN'S</button>
           <button className={styles.options__button}>SHOP MEN'S</button>

@@ -1,6 +1,7 @@
 // Imports
 import express, { Application } from 'express'
 import dotenv from 'dotenv'
+import path from 'path'
 
 // DB
 import connectDB from './config/db'
@@ -14,6 +15,7 @@ const PORT = process.env.PORT || 3333
 app.use(express.json())
 dotenv.config()
 connectDB()
+
 
 app.use('/api', routes)
 

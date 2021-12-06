@@ -9,7 +9,8 @@ function cart() {
     if (user) {
       return (
         <div>
-          <p>User id: {user.sub.split('|')[1]}</p>
+          {/* <p>User id: {user.sub.split('|')[1]}</p> */}
+          {JSON.stringify(user)}
           <a href="/api/auth/logout">Logout</a>
         </div>
       );

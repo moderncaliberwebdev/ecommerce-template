@@ -18,7 +18,7 @@ export default function Nav() {
                 <a href="/api/auth/login">
                     <img src="/profile.png" alt="Profile" className={styles.nav__imgs}/>
                 </a>
-                <a href="/search">
+                <a href="#">
                  <img src="/search.png" alt="Search" className={styles.nav__imgs}/>
                 </a>
                <a href="/cart">

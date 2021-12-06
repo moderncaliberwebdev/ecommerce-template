@@ -2,7 +2,6 @@ import {connect} from 'mongoose'
 
 const connectDB = async () => {
   try {
-    // make .env file and put this in >> MONGO_URI=mongodb://localhost:27017/mernkindling
     const connection = await connect(process.env.MONGO_URI, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
